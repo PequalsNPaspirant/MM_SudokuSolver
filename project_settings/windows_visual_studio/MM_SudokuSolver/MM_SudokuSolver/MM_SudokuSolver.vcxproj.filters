@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\Assert\MyAssert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Logger\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Logger\Logger_UnitTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_TestData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Generator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_solverUsingBruteForce_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_UniversalDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_BigInteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_bb_sudoku.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_FsssSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_JSolve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Timer\Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\MM_SudokuSolver_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Timer\MSDNTimeExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Timer\Timer_UnitTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Timer\Timer2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesGeneric_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesGeneric_14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate_14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\Assert\MyAssert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Logger\Logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_TestData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_UniversalDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_solverUsingBruteForce_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_BigInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_bb_sudoku.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_FsssSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_JSolve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Timer\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Timer\MSDNTimeExample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Timer\Timer2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_13.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesGeneric_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesGeneric_14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate_14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

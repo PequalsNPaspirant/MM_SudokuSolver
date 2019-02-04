@@ -1,0 +1,331 @@
+
+obj/windows_gcc/Assert/MyAssert.o: src/Assert/MyAssert.cpp src/Assert/MyAssert.h
+
+obj/windows_gcc/Logger/Logger.o: src/Logger/Logger.cpp src/Timer/Timer.h src/Logger/Logger.h
+
+obj/windows_gcc/Logger/Logger_UnitTest.o: src/Logger/Logger_UnitTest.cpp src/Timer/Timer.h \
+ src/Logger/Logger.h
+
+obj/windows_gcc/MM_SudokuSolver_main.o: src/MM_SudokuSolver_main.cpp \
+ ../MM_CommonUtils/src/WindowsUtils/WindowsUtils.h src/Timer/Timer.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.o: src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_Generator.o: src/Puzzles_Sudoku/Puzzles_Sudoku_Generator.cpp src/Timer/Timer.h \
+ src/Assert/MyAssert.h src/Puzzles_Sudoku/Puzzles_Sudoku_Generator.h \
+ src/Logger/Logger.h src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_5.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTables.o: src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTables.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTables.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_14.o: src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_14.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_3.o: src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_3.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate.o: src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_14.o: src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_14.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_3.o: src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_3.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_Solver.o: src/Puzzles_Sudoku/Puzzles_Sudoku_Solver.cpp \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h \
+ src/Logger/Logger.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h src/Puzzles_Sudoku/Puzzles_Sudoku_Solver.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_UniversalDatabase.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_0.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_0.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_0.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_solverUsingBruteForce_1.o: src/Puzzles_Sudoku/Puzzles_Sudoku_solverUsingBruteForce_1.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_10.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_10.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTables.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_10.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_11.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_11.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_11.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_12.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_12.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_12.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_13.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_13.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_13.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_3.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_14.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_14.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_14.h \
+ src/Assert/MyAssert.h src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h \
+ src/Logger/Logger.h src/Timer/Timer.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_2.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_2.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_3.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_3.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_4.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_4.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_4.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_5.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_5.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_5.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_6.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_6.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_6.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_7.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_7.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTables.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_7.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_8.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_8.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTables.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_8.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_9.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_9.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTables.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_9.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_1.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_1.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_1.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_2.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_2.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_3.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_3.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_4.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_4.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_4.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_5.o: src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_5.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_5.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_Solver_bb_sudoku.o: src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_bb_sudoku.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_bb_sudoku.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_Solver_FsssSolver.o: src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_FsssSolver.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_FsssSolver.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_Solver_JSolve.o: src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_JSolve.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_JSolve.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.o: src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_14.o: src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_14.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_14.h \
+ src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_14.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_2.o: src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_2.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_2.h src/Assert/MyAssert.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_3.o: src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_3.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_3.h src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_3.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_Test.o: src/Puzzles_Sudoku/Puzzles_Sudoku_Test.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Test.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_UniversalDatabase.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Generator.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_0.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_1.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_4.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_5.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_6.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_7.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_8.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_9.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_10.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_11.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_12.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_13.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_1.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_4.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_5.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_FsssSolver.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_JSolve.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_bb_sudoku.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_TestData.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_TestData.o: src/Puzzles_Sudoku/Puzzles_Sudoku_TestData.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_UniversalDatabase.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_TestData.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_UniversalDatabase.o: src/Puzzles_Sudoku/Puzzles_Sudoku_UniversalDatabase.cpp \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h src/Logger/Logger.h \
+ src/Timer/Timer.h src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Assert/MyAssert.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_UniversalDatabase.h
+
+obj/windows_gcc/Puzzles_Sudoku/Puzzles_Sudoku_Utils.o: src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.cpp \
+ src/Assert/MyAssert.h src/Puzzles_Sudoku/Puzzles_Sudoku_Utils.h \
+ src/Logger/Logger.h src/Timer/Timer.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_1.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Test.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_UniversalDatabase.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Generator.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_0.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_1.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_BigInteger.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_4.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_5.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_6.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_7.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_8.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_9.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_10.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_11.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_12.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_13.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingBruteForce_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesGeneric_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_GlobalLookupTablesTemplate_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_StaticBitSet_14.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_1.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_2.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_3.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_4.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingDancingLinks_5.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_FsssSolver.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_JSolve.h \
+ src/Puzzles_Sudoku/Puzzles_Sudoku_Solver_bb_sudoku.h
+
+obj/windows_gcc/Timer/MSDNTimeExample.o: src/Timer/MSDNTimeExample.cpp
+
+obj/windows_gcc/Timer/Timer.o: src/Timer/Timer.cpp src/Timer/Timer.h src/Assert/MyAssert.h
+
+obj/windows_gcc/Timer/Timer2.o: src/Timer/Timer2.cpp src/Timer/Timer2.h
+
+obj/windows_gcc/Timer/Timer_UnitTest.o: src/Timer/Timer_UnitTest.cpp src/Timer/Timer.h

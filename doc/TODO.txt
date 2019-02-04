@@ -1,0 +1,47 @@
+TODO:
+Add sanityTest, regressionTest, performanceTest
+Redefin static bool isZero(const ArrayType& lhs) as shown under TODO in code
+Can we improve guess? (Is it easier than P vs NP problem? :-) )
+Add separate file for different classes in Puzzle Utils file
+Rename various classes to make version-ing simple and different algo using its own utility/helper classes.
+Add read-me in GIT- add puzzles and solutions of different dimensions in it.
+Remove row, column. Instead use only index.
+processAssignmenetOneByOne() - break loop into two loops: instead of rowStart to rowEnd, skip mid => use two loops: mid - 1 to rowStart and mid + 1 to rowEnd
+Find min and second min. Use second min as min for next iteration after guess. Keep track of all changes to bits in cell to update min. Do this in checkIfNakedSingle()
+Debug NakedPairs() to check if the number of naked pairs found is correct.
+Write revision history for all versions explaining "What's new in this release!"
+Avoid initialization loop. FORCE compiler to create it at compile time using compile time recursion of templates OR Pass ready array with initial bits to constructor.
+When hidden single is found in row, it can propagate constraint only in col and box; if HS is found in col, it can propagate constraint only in row and box...etc
+Reduce number of calls to getCountOfONBits() - 3 times in searchForNakedPair(), 1 time to find guess with least possibilities, 2 times to collect stats in lockedCandidate()
+Function processPendingAssignmentsOneByOne needs look up table for "all peers of an element" (go thru current algorithm to find areas where we can introduce look up tables)
+Avoid row*m_size+column:- Increment row by size in loop OR use (pre-compute multiplication) globalLookupTables.m_rowStartIndex to avoid row*m_size OR iterate thru 1 to size * size
+globalLookupTables.cellToBoxIndex - can be improved if m_NSPossibleValues is single dimension. It is used in processPendingAssignmentsAllAtOnce to fill up initial filters for row/column/box
+Add tail recursion when calling ::solve()...NOT possible to avoid stacks...because we need the previous state for backtracking....instead use technique in next line:
+Avoid stack grow, use the pre-allocated big array and stack the data for each recursive function call. (manual function stack management)
+Fix bug in searchForNakedPair() - causes one extra guess in some cases
+use std::bitset
+Optimize: searchForNakedPair()
+Optimize: searchForLockedCandidate()
+Optimize: searchForHiddenSingles() - collect all bits with | all cells having count = 2. If count(nextCell) == 2 && (total & nextCell == nextCell) ...confusion...need to rethink
+Optimize overall algorithm to reduce time
+Optimize dancing links algorithm
+
+--Add license in all files
+--Convert vector of vectors to vector and access elements
+--CircularQueue can not use cellIndex, it has to use row and column because we iterate through m_NSPossibleValues by row/column using row and columns always. Otherwise we have to calculate row and column from cellIndex.
+--Also, remove BigInteger and use template specialization for different digit sizes of BigInteger 
+--Pass cellIndex to checkIfNakedSingle(0 instead of row and column
+--Avoid call to getOnBitPosition(). Do not store the value in pending queue, rather store masks. This will make other version of setBitON() in use and current version will be removed.
+XX--try keeping cellIndex in pending queue instead of row and column
+XX--get row, column and boxIndex from cellIndex
+XX--stores rows, columns and boxes changed, so that hidden singles and naked pairs can be searched only in these houses. 
+--replace bitSet.getCountOfONBits() == 1 by bitSet.m_digits[0] & (bitSet.m_digits[0] - 1) == 0
+--Do not keep BitSet in queue. Just keep row and column and reuse the BitSet already kept in grid/array/m_NSPossibleValues[row * size + column]
+--Avoid checking ON bit in m_NSPossibleValues when we find a cell with minimum ON bits. Rather use n & -n OR n ^ (n & (n-1))
+XX--checkIfNakedSingle can be called at once iterating thru all grid after constraint propagation is done. Need to keep an array of unsolved values so that we can skip already solved values. This can be applied to other strategies where checkIfNakedSingle is called intermittently.
+--Use template specialization for StaticBitSet to use single integer or long long for dim upto 32/64.
+--Use static array everywhere.
+--Check if isBitON() and isBitSubset() can be merged
+--Remove redundant instances/definitions of numDigits, DIGIT_TYPE, BIT_IN_ONE_DIGIT etc.
+--globalLookupTables should use only static arrays (single dimension as far as possible) OR single dimension vectors
+--To avoid dynamic allocation in vector, use static single dimension array. Need to use template with size as argument. Access elements using row*m_size+column. 

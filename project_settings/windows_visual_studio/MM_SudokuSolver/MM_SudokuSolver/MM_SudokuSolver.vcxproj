@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesGeneric_14.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate_14.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_14.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_14.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesGeneric_3.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate_3.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_13.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_3.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_1.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_2.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_12.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_11.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_10.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_9.cpp" />
+    <ClCompile Include="..\..\..\..\src\Timer\MSDNTimeExample.cpp" />
+    <ClCompile Include="..\..\..\..\src\Timer\Timer.cpp" />
+    <ClCompile Include="..\..\..\..\src\Timer\Timer2.cpp" />
+    <ClCompile Include="..\..\..\..\src\Timer\Timer_UnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTables.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_6.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_7.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_8.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_5.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_bb_sudoku.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_FsssSolver.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_JSolve.cpp" />
+    <ClCompile Include="..\..\..\..\src\Assert\MyAssert.cpp" />
+    <ClCompile Include="..\..\..\..\src\Logger\Logger.cpp" />
+    <ClCompile Include="..\..\..\..\src\Logger\Logger_UnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\src\MM_SudokuSolver_main.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_BigInteger.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Generator.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_0.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_solverUsingBruteForce_1.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_2.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_3.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_4.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_5.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_1.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_2.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_3.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_4.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Test.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_TestData.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_UniversalDatabase.cpp" />
+    <ClCompile Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesGeneric_14.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate_14.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_14.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_14.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesGeneric_3.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate_3.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_13.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_3.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_1.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_StaticBitSet_2.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTablesTemplate.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_12.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_11.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_10.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_9.h" />
+    <ClInclude Include="..\..\..\..\src\Timer\MSDNTimeExample.h" />
+    <ClInclude Include="..\..\..\..\src\Timer\Timer.h" />
+    <ClInclude Include="..\..\..\..\src\Timer\Timer2.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_GlobalLookupTables.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_6.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_7.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_8.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_5.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_bb_sudoku.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_FsssSolver.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver_JSolve.h" />
+    <ClInclude Include="..\..\..\..\src\Assert\MyAssert.h" />
+    <ClInclude Include="..\..\..\..\src\Logger\Logger.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_BigInteger.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Generator.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Solver.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_0.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_solverUsingBruteForce_1.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_2.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_3.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_4.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingBruteForce_5.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_1.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_2.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_3.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_SolverUsingDancingLinks_4.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Test.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_TestData.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_UniversalDatabase.h" />
+    <ClInclude Include="..\..\..\..\src\Puzzles_Sudoku\Puzzles_Sudoku_Utils.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CB77E890-5B03-4983-AA14-A9E77CF22816}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MM_SudokuSolver</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\src;$(ProjectDir)\..\..\..\..\..\MM_UnitTestFramework\src;$(ProjectDir)\..\..\..\..\..\MM_CommonUtils\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(ProjectDir)\..\..\..\..\obj\windows_visual_studio\$(Configuration)_$(Platform)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)\..\..\..\..\obj\windows_visual_studio\$(Configuration)_$(Platform)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\$(TargetName).pdb</ProgramDatabaseFile>
+      <StackReserveSize>1000000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\MM_CommonUtils\bin\windows_visual_studio\$(Configuration)_$(Platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MM_CommonUtils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\src;$(ProjectDir)\..\..\..\..\..\MM_UnitTestFramework\src;$(ProjectDir)\..\..\..\..\..\MM_CommonUtils\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(ProjectDir)\..\..\..\..\obj\windows_visual_studio\$(Configuration)_$(Platform)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)\..\..\..\..\obj\windows_visual_studio\$(Configuration)_$(Platform)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\$(TargetName).pdb</ProgramDatabaseFile>
+      <StackReserveSize>1000000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\MM_CommonUtils\bin\windows_visual_studio\$(Configuration)_$(Platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MM_CommonUtils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\src;$(ProjectDir)\..\..\..\..\..\MM_UnitTestFramework\src;$(ProjectDir)\..\..\..\..\..\MM_CommonUtils\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(ProjectDir)\..\..\..\..\obj\windows_visual_studio\$(Configuration)_$(Platform)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)\..\..\..\..\obj\windows_visual_studio\$(Configuration)_$(Platform)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\$(TargetName).pdb</ProgramDatabaseFile>
+      <StackReserveSize>1000000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\MM_CommonUtils\bin\windows_visual_studio\$(Configuration)_$(Platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MM_CommonUtils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\..\..\src;$(ProjectDir)\..\..\..\..\..\MM_UnitTestFramework\src;$(ProjectDir)\..\..\..\..\..\MM_CommonUtils\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(ProjectDir)\..\..\..\..\obj\windows_visual_studio\$(Configuration)_$(Platform)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)\..\..\..\..\obj\windows_visual_studio\$(Configuration)_$(Platform)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(ProjectDir)..\..\..\..\bin\windows_visual_studio\$(Configuration)_$(Platform)\$(TargetName).pdb</ProgramDatabaseFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <StackReserveSize>1000000000</StackReserveSize>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\..\MM_CommonUtils\bin\windows_visual_studio\$(Configuration)_$(Platform)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MM_CommonUtils.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
