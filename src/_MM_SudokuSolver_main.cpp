@@ -29,7 +29,6 @@
 
 #include <iostream>
 
-#include "WindowsUtils/WindowsUtils.h"
 #include "Timer/Timer.h"
 
 namespace mm {
@@ -42,8 +41,6 @@ using namespace mm;
 
 int main(int argc, char* argv[])
 {
-	MaximizeWindow();
-
 	testPuzzlesSudokuSolver();
 
 	cout << "\n\n\n" << Timer::getCurrentLocalTimeInNanoSeconds() << " CONGRATULATIONS!!! End of program reached successfully.\n\n\n";
