@@ -127,9 +127,9 @@ We can then compute that we'd be almost 1% done with this one puzzle by now:
 ((10 GHz) * 1024 * 1 million * (13 billion years)) / 4.6e38 = 0.00913229997 = 0.913229997 percent
 
 The second choice is to somehow process much more than one possibility per machine instruction. That seems impossible,
-but fortunately it is exactly what constraint propagation does for us. We don't have to try all 4 × 1038 possibilities because
+but fortunately it is exactly what constraint propagation does for us. We don't have to try all 4 × 10^38 possibilities because
 as soon as we try one we immediately eliminate many other possibilities. For example, square H7 of this puzzle has two possibilities, 6 and 9.
-We can try 9 and quickly see that there is a contradiction. That means we've eliminated not just one possibility, but fully half of the 4 × 1038 choices.
+We can try 9 and quickly see that there is a contradiction. That means we've eliminated not just one possibility, but fully half of the 4 × 10^38 choices.
 
 In fact, it turns out that to solve this particular puzzle we need to look at only 25 possibilities and
 we only have to explicitly search through 9 of the 61 unfilled squares; constraint propagation does the rest.
