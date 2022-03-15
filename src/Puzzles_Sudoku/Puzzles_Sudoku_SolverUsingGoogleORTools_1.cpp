@@ -25,79 +25,21 @@
 //=======================================================================================================//
 
 
+#include <iostream>
 #include <vector>
-#include <set>
+#include <cmath>
 using namespace std;
+
+#include "Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingGoogleORTools_1.h"
+#include "Puzzles_Sudoku/Puzzles_Sudoku_Utils.h"
 
 namespace mm {
 
-	class Cell_0;
-
-	class Comparator
+	bool Google_OR_tools_1::solve(const vector< vector<int> >& dataIn, vector< vector< vector<int> > >& solutionSetsOut, const unsigned int numSolutions, SudokuPuzzleBasicStats& stats)
 	{
-	public:
-		const vector< vector<Cell_0> >& m_refData;
-		Comparator(const vector< vector<Cell_0> >& dataIn);
-		bool operator()(const std::pair<int, int>& left, const std::pair<int, int>& right) const;
+		return true;
+	}
 
-	};
-
-	class Cell_0
-	{
-	public:
-		Cell_0();
-		Cell_0(const Cell_0& obj);
-		bool setFalse(int index);
-
-		int m_value;
-		bool isEmpty;
-		vector<bool> m_isPossible;
-		int m_isPossibleCount;
-		bool originalClue;
-	};
-
-
-	class SudokuMatrix_0
-	{
-	public:
-		static void solve(const vector< vector<int> >& dataIn, vector< vector<int> >& solutionOut);
-
-		SudokuMatrix_0(const vector< vector<int> >& dataIn);
-		bool propagateConstraints(int row, int column, vector< vector<Cell_0> >& dataIn);
-		void print(const vector< vector<Cell_0> >& dataIn);
-		void printColourful(const vector< vector<Cell_0> >& dataIn);
-		void execute(vector< vector<int> >& solutionOut);
-		bool executeStep(multiset<std::pair<int, int>, Comparator>::iterator itFrom, multiset<std::pair<int, int>, Comparator>::iterator itTo, const vector< vector<Cell_0> >& dataIn, vector< vector<int> >& solutionOut);
-		bool validate(const vector< vector<Cell_0> >& dataIn);
-		bool validateIntermediateSteps(const vector< vector<Cell_0> >& dataIn);
-		bool validateSingleCell(int row, int column, const vector< vector<Cell_0> >& dataIn);
-		bool validateSingleCell2(int row, int column, const vector< vector<Cell_0> >& dataIn);
-		void copyDataFromTo(const vector< vector<Cell_0> >& from, vector< vector<Cell_0> >& to);
-
-		vector< vector<Cell_0> > m_data;
-		multiset<std::pair<int, int>, Comparator> m_emptyCells;
-
-		int getPerformanceParameter()
-		{
-			//return m_countCellsTried;
-			return 0;
-		}
-
-		int getValuesTried()
-		{
-			//return m_countValuesTried;
-			return 0;
-		}
-
-		int getNumRecursiveCalls()
-		{
-			return 0;
-		}
-
-		int getMemoryLeaked()
-		{
-			return 0;
-		}
-	};
+	
 
 }

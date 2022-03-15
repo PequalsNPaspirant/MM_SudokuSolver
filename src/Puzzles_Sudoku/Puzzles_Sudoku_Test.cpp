@@ -239,6 +239,10 @@ namespace mm {
 	int PuzzlesSudokuTester::getAlgoIndex<JSolveMatrix>() { return SudokuSolvingAlgoTypes::JSolve; }
 	template<>
 	int PuzzlesSudokuTester::getAlgoIndex<bb_sudoku_Matrix>() { return SudokuSolvingAlgoTypes::bb_sudoku; }
+	template<>
+	int PuzzlesSudokuTester::getAlgoIndex<Microsoft_z3_solver_1>() { return SudokuSolvingAlgoTypes::microsoft_z3_solver_1; }
+	template<>
+	int PuzzlesSudokuTester::getAlgoIndex<Google_OR_tools_1>() { return SudokuSolvingAlgoTypes::google_OR_tools_1; }
 
 	void PuzzlesSudokuTester::testPuzzlesSudokuSolverUsingBruteForce_0(const vector< vector<int> >& dataIn, vector< vector<int> >& solutionOut)
 	{
@@ -399,6 +403,8 @@ namespace mm {
 		if (sudokuPuzzleData.size() == 9 && (solveUsingTheseAlgos & PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()))
 			PuzzlesSudokuTester::solveSudokuPuzzle<FsssSolver>(sudokuPuzzleData, numSolutions);
 
+		//Third party solvers:
+
 		//SudokuPuzzleUtils::getLogger() << "\n JSolve --------------------------------------------------------------";
 		if (sudokuPuzzleData.size() == 9 && (solveUsingTheseAlgos & PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()))
 			PuzzlesSudokuTester::solveSudokuPuzzle<JSolveMatrix>(sudokuPuzzleData, numSolutions);
@@ -406,6 +412,12 @@ namespace mm {
 		//SudokuPuzzleUtils::getLogger() << "\n bb sudoku --------------------------------------------------------------";
 		if (sudokuPuzzleData.size() == 9 && (solveUsingTheseAlgos & PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()))
 			PuzzlesSudokuTester::solveSudokuPuzzle<bb_sudoku_Matrix>(sudokuPuzzleData, numSolutions);
+
+		if (solveUsingTheseAlgos & PuzzlesSudokuTester::getAlgoFlag<Microsoft_z3_solver_1>())
+			PuzzlesSudokuTester::solveSudokuPuzzle<Microsoft_z3_solver_1>(sudokuPuzzleData, numSolutions);
+
+		if (solveUsingTheseAlgos & PuzzlesSudokuTester::getAlgoFlag<Google_OR_tools_1>())
+			PuzzlesSudokuTester::solveSudokuPuzzle<Google_OR_tools_1>(sudokuPuzzleData, numSolutions);
 
 		//Verify if all algorithms produce same solution(s)
 		for (int k = 1; k < SudokuSolvingAlgoTypes::totalAlgos; ++k)
@@ -496,7 +508,8 @@ namespace mm {
 
 		WIN32_FIND_DATA fd;
 #ifdef _MSC_VER
-		HANDLE hFind = ::FindFirstFile(string2wchar_t(directory_path + "/*.*"), &fd);
+		//HANDLE hFind = ::FindFirstFile(string2wchar_t(directory_path + "/*.*"), &fd);
+		HANDLE hFind = ::FindFirstFile(string(directory_path + "/*.*").c_str(), & fd);
 #elif __GNUC__
 		HANDLE hFind = ::FindFirstFile(string(directory_path + "/*.*").c_str(), &fd);
 #endif
@@ -507,7 +520,8 @@ namespace mm {
 				if (fd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
 				{
 #ifdef _MSC_VER
-					string directoryName(wchar_t2string(fd.cFileName));
+					//string directoryName(wchar_t2string(fd.cFileName));
+					string directoryName(fd.cFileName);
 #elif __GNUC__
 					string directoryName(fd.cFileName);
 #endif
@@ -517,7 +531,8 @@ namespace mm {
 				else
 				{
 #ifdef _MSC_VER
-					string fileName(wchar_t2string(fd.cFileName));
+					//string fileName(wchar_t2string(fd.cFileName));
+					string fileName(fd.cFileName);
 #elif __GNUC__
 					string fileName(fd.cFileName);
 #endif
@@ -962,22 +977,24 @@ namespace mm {
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix4>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix5>()
-			| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix6>()
+			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix6>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_1>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_3>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_4>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_5>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_6>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_14>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_4>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_5>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_6>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_14>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestDancingLinksSudokuMatrix>()
-			| PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()
-			| PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()
-			| PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()		
+			//| PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()
+			//| PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()
+			//| PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()	
+			| PuzzlesSudokuTester::getAlgoFlag<Microsoft_z3_solver_1>()
+			//| PuzzlesSudokuTester::getAlgoFlag<Google_OR_tools_1>()
 			;
 
 		m_printInput = true;
@@ -1066,7 +1083,7 @@ namespace mm {
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_4>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_5>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_6>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
 			////| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
@@ -1074,6 +1091,8 @@ namespace mm {
 			////| PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()
 			////| PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()
 			////| PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()
+			| PuzzlesSudokuTester::getAlgoFlag<Microsoft_z3_solver_1>()
+			//| PuzzlesSudokuTester::getAlgoFlag<Google_OR_tools_1>()
 			;
 
 		unsigned int numSolutions = 1;
@@ -1180,6 +1199,8 @@ namespace mm {
 			////| PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()
 			////| PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()
 			////| PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()
+			| PuzzlesSudokuTester::getAlgoFlag<Microsoft_z3_solver_1>()
+			//| PuzzlesSudokuTester::getAlgoFlag<Google_OR_tools_1>()
 			;
 
 		unsigned int numSolutions = 1;
@@ -1286,6 +1307,8 @@ namespace mm {
 			////| PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()
 			////| PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()
 			////| PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()
+			| PuzzlesSudokuTester::getAlgoFlag<Microsoft_z3_solver_1>()
+			//| PuzzlesSudokuTester::getAlgoFlag<Google_OR_tools_1>()
 			;
 
 		unsigned int numSolutions = 1;
@@ -1438,6 +1461,8 @@ namespace mm {
 			////| PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()
 			////| PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()
 			////| PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()
+			| PuzzlesSudokuTester::getAlgoFlag<Microsoft_z3_solver_1>()
+			//| PuzzlesSudokuTester::getAlgoFlag<Google_OR_tools_1>()
 			;
 
 		unsigned int numSolutions = 1;
@@ -1582,7 +1607,7 @@ namespace mm {
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_5>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_6>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_14>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_14>()
 			////| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
@@ -1590,6 +1615,8 @@ namespace mm {
 			////| PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()
 			////| PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()
 			////| PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()
+			| PuzzlesSudokuTester::getAlgoFlag<Microsoft_z3_solver_1>()
+			//| PuzzlesSudokuTester::getAlgoFlag<Google_OR_tools_1>()
 			;
 
 		unsigned int numSolutions = 1;
@@ -1904,7 +1931,7 @@ namespace mm {
 		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_3();
 		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_4();
 		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_5(); // sanity test
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_6();
+		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_6();
 		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_7();
 		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_8(); //49x49
 		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_9(); //100x100

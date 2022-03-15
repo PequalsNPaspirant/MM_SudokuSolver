@@ -59,6 +59,8 @@ using namespace std;
 #include "Puzzles_Sudoku/Puzzles_Sudoku_Solver_FsssSolver.h"
 #include "Puzzles_Sudoku/Puzzles_Sudoku_Solver_JSolve.h"
 #include "Puzzles_Sudoku/Puzzles_Sudoku_Solver_bb_sudoku.h"
+#include "Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingMicrosoftZ3Solver_1.h"
+#include "Puzzles_Sudoku/Puzzles_Sudoku_SolverUsingGoogleORTools_1.h"
 
 namespace mm {
 
@@ -248,6 +250,9 @@ namespace mm {
 		Fsss_Solver,
 		JSolve,
 		bb_sudoku,
+		microsoft_z3_solver_1,
+		google_OR_tools_1,
+
 		totalAlgos
 	};
 }

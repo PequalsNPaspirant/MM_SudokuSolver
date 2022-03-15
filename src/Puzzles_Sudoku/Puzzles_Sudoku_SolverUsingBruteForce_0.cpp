@@ -44,7 +44,7 @@ namespace mm {
 
 	}
 
-	bool Comparator::operator()(const std::pair<int, int>& left, const std::pair<int, int>& right)
+	bool Comparator::operator()(const std::pair<int, int>& left, const std::pair<int, int>& right) const
 	{
 		return m_refData[left.first][left.second].m_isPossibleCount < m_refData[right.first][right.second].m_isPossibleCount;
 	}

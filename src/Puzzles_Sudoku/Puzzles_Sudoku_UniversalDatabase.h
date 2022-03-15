@@ -39,7 +39,7 @@ namespace mm {
 	class comparator
 	{
 	public:
-		bool operator()(std::pair<unsigned int, string> lhs, std::pair<unsigned int, string> rhs)
+		bool operator()(std::pair<unsigned int, string> lhs, std::pair<unsigned int, string> rhs) const
 		{
 			return (lhs.first < rhs.first) || (lhs.first == rhs.first && lhs.second < rhs.second);
 		}
