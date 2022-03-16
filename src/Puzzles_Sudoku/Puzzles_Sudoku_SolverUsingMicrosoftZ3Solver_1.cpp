@@ -78,12 +78,13 @@ namespace mm {
         }
 
         // each 3x3 square contains a digit at most once
-        for (unsigned i0 = 0; i0 < 3; i0++) {
-            for (unsigned j0 = 0; j0 < 3; j0++) {
+        int subDim = static_cast<int>(sqrt(dim));
+        for (unsigned i0 = 0; i0 < subDim; i0++) {
+            for (unsigned j0 = 0; j0 < subDim; j0++) {
                 expr_vector t(c);
-                for (unsigned i = 0; i < 3; i++)
-                    for (unsigned j = 0; j < 3; j++)
-                        t.push_back(x[(i0 * 3 + i) * dim + j0 * 3 + j]);
+                for (unsigned i = 0; i < subDim; i++)
+                    for (unsigned j = 0; j < subDim; j++)
+                        t.push_back(x[(i0 * subDim + i) * dim + j0 * subDim + j]);
                 s.add(distinct(t));
             }
         }
@@ -111,8 +112,13 @@ namespace mm {
         vector<vector<int>> solution(dim, vector<int>(dim, 0));
         model m = s.get_model();
         for (unsigned i = 0; i < dim; ++i) {
-            for (unsigned j = 0; j < dim; ++j)
-                solution[i][j] = m.eval(x[i * dim + j]);
+            for (unsigned j = 0; j < dim; ++j) {
+                //std::cout << m.eval(x[i * dim + j]);
+                auto v = m.eval(x[i * dim + j]);
+                //std::cout << v;
+                //std::cout << v.get_numeral_int();
+                solution[i][j] = v.get_numeral_int();
+            }
             //std::cout << '\n';
         }
         solutionSetsOut.push_back(std::move(solution));

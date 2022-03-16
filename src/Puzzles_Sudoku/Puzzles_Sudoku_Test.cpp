@@ -196,6 +196,9 @@ namespace mm {
 		case SudokuSolvingAlgoTypes::Fsss_Solver: return "Fsss Solver";
 		case SudokuSolvingAlgoTypes::JSolve: return "JSolve";
 		case SudokuSolvingAlgoTypes::bb_sudoku: return "bb_sudoku";
+		case SudokuSolvingAlgoTypes::microsoft_z3_solver_1: return "microsoft_z3_solver_1";
+		case SudokuSolvingAlgoTypes::google_OR_tools_1: return "google_OR_tools_1";
+		default: return "Unknown Algo";
 		}
 
 		return "";
@@ -788,7 +791,7 @@ namespace mm {
 		//PuzzlesSudokuTester::solveSudokuPuzzleUsingDifferentAlgo(SudokuPuzzleUtils::convertToVectorOfVector(".........|.........|........5|86.53....|3......58|...8..37.|...2635..|..3.....1|......8..", dimension), numSolutions);
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_2()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_4x4_1()
 	{
 		string example(
 			". . | 4 ."
@@ -816,7 +819,7 @@ namespace mm {
 		cin.get();
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_3()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_4x4_2()
 	{
 		string example(
 			"3 2 | 1 4"
@@ -845,7 +848,7 @@ namespace mm {
 		cin.get();
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_4()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_16x16()
 	{
 		string example(
 			".  .  .  . | .  .  .  8 | .  .  .  . | 10  .  .  ."
@@ -873,14 +876,18 @@ namespace mm {
 		const bool presentInLibrary = false;
 		PuzzlesSudokuTester::solveSudokuPuzzleUsingDifferentAlgo(SudokuPuzzleUtils::convertToVectorOfVector(example, 16),
 			numSolutions,
+			0
 			//			PuzzlesSudokuTester::getAllAlgoFlag()
 			//			PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix3>()
 			//			| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix4>()
-			PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix5>()
-			| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix6>()
+			//PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix5>()
+			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrix6>()
 			//			| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//			| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//			| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
+			| PuzzlesSudokuTester::getAlgoFlag<FastestDancingLinksSudokuMatrix>()
+			| PuzzlesSudokuTester::getAlgoFlag<Microsoft_z3_solver_1>()
+			//| PuzzlesSudokuTester::getAlgoFlag<Google_OR_tools_1>()
 			,
 			presentInLibrary);
 
@@ -943,7 +950,7 @@ namespace mm {
 			*/
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_5()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_3x3()
 	{		
 		vector<string> examples({
 			// Amazing puzzle with 21 clues, requires 172 guesses (requires 39 guesses with modified algo)
@@ -989,7 +996,7 @@ namespace mm {
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
-			//| PuzzlesSudokuTester::getAlgoFlag<FastestDancingLinksSudokuMatrix>()
+			| PuzzlesSudokuTester::getAlgoFlag<FastestDancingLinksSudokuMatrix>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FsssSolver>()
 			//| PuzzlesSudokuTester::getAlgoFlag<JSolveMatrix>()
 			//| PuzzlesSudokuTester::getAlgoFlag<bb_sudoku_Matrix>()	
@@ -998,7 +1005,7 @@ namespace mm {
 			;
 
 		m_printInput = true;
-		m_printOutput = false;
+		m_printOutput = true;
 		unsigned int numSolutions = 1;
 		unsigned int dimension = 9;
 
@@ -1023,7 +1030,7 @@ namespace mm {
 		cin.get();
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_6()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_36x36()
 	{
 		vector<string> examples({
 			"  .  .  .  .  .  . |  1 25  .  .  . 24 |  .  .  .  .  .  . |  .  .  .  .  2  . |  .  .  .  .  .  . |  . 21  .  .  .  . "
@@ -1117,7 +1124,7 @@ namespace mm {
 		cin.get();
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_7()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_49x49_1()
 	{
 		vector<string> examples({
 			"  .  .  . 34 29  .  . |  .  .  .  .  4  .  . | 27  .  .  .  .  .  . |  .  .  .  .  .  .  . |  .  .  .  .  5  9  . |  .  . 36  .  .  .  . |  .  .  .  .  . 38 40 "
@@ -1191,7 +1198,7 @@ namespace mm {
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_4>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_5>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_6>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
 			////| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
@@ -1225,7 +1232,7 @@ namespace mm {
 		cin.get();
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_8()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_49x49_2()
 	{
 		vector<string> examples({
 			" 16 21  .  .  . 39 19 |  .  .  .  .  .  . 44 |  .  .  .  .  .  .  . |  .  .  .  .  .  . 45 |  .  .  .  .  .  .  . |  .  .  .  .  .  .  . |  .  .  .  .  . 48 14 "
@@ -1299,7 +1306,7 @@ namespace mm {
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_4>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_5>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_6>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
 			////| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
@@ -1333,7 +1340,7 @@ namespace mm {
 		cin.get();
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_9()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_100x100_1()
 	{
 		vector<string> examples({
 			". . . . . 55 . . . 53 . . . . 10 81 . . 85 . . . . . 19 . . 72 16 41 . . . 38 6 39 . 13 . 90 . 4 63 18 30 79 35 26 82 76 89 65 95 73 23 29 34 42 67 . 58 . 74 . 68 57 8 . . . 91 11 75 . . 80 . . . . . 97 . . 33 69 . . . . 28 . . . 21 . . . . ."
@@ -1453,7 +1460,7 @@ namespace mm {
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_5>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_6>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_14>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_14>()
 			////| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
@@ -1487,7 +1494,7 @@ namespace mm {
 		cin.get();
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_10()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_100x100_2()
 	{
 		vector<string> examples({
 			". . . . . 55 . . . 53 . . . . 10 81 . . 85 . . . . . 19 . . 72 16 41 . . . 38 6 39 . 13 . 90 . 4 63 18 30 79 35 . 82 76 89 65 95 73 23 29 34 42 67 . 58 . 74 . 68 . 8 . . . 91 11 75 . . 80 . . . . . 97 . . 33 69 . . . . 28 . . . 21 . . . . ."
@@ -1641,7 +1648,7 @@ namespace mm {
 		cin.get();
 	}
 
-	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_11()
+	void PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_225x225()
 	{
 		vector<string> examples({
 			"155   . 185 154 148 183   .   . 048 149 013 097 095   . 112 165 184   . 162   .   . 066   . 023 119   . 060 158 011 217 135   . 207 167 177 134   .   . 004 123 071 082 070 005 003 113 130 106 065 200   . 093 101 088 190 132 105 161 137 204 205 140 073   . 159 056 078 036   . 019 089 122 030 146 062 053   . 153 091 133 035   . 188 221 042 009 178 126   . 156 080 047 098   .   . 046 049 157 179 201 173 150 108 020 115 202 010   . 214 057 041 152 102 187 086 051 052   . 210 110 104 014 037 147 171 096 186 189 172 069   .   . 018 129 127 136   . 079 192 160 084 081 109   . 111 208 026 007   . 181 059 044 022 075 033 058   . 012 121 094 131   . 163 197 219 027 125 072 138 076 061 169 024 141   . 040 168 120 034 176 215 117 008 015 099 001 170   .   . 211 032 016 166   . 124 139 182 100 180   . 000 068   . 203   .   . 175   . 092 031 128   . 164 090 194 142 114   .   . 025 054 145 222   . 017"
@@ -1886,7 +1893,7 @@ namespace mm {
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_5>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_6>()
 			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_7>()
-			| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_14>()
+			//| PuzzlesSudokuTester::getAlgoFlag<FastestBruteForceSudokuMatrix_14>()
 			////| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks2>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks3>()
 			//| PuzzlesSudokuTester::getAlgoFlag<SudokuMatrixDancingLinks4>()
@@ -1927,16 +1934,16 @@ namespace mm {
 
 		// Debugging special cases
 		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_1();
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_2();
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_3();
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_4();
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_5(); // sanity test
-		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_6();
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_7();
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_8(); //49x49
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_9(); //100x100
-		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_10(); //100x100
-		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_11(); //225x225
+		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_4x4_1();
+		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_4x4_2();
+		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_16x16();
+		//PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_3x3();  // sanity test
+		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_36x36();
+		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_49x49_1();
+		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_49x49_2();
+		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_100x100_1();
+		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_100x100_2();
+		PuzzlesSudokuTester::debugSpecialPuzzleOrAlgorithm_225x225();
 
 		//PuzzlesSudokuTester::testSudokuPuzzlesWithDimension9();
 		//PuzzlesSudokuTester::exhaustiveTestSudokuPuzzlesWithDimension9();

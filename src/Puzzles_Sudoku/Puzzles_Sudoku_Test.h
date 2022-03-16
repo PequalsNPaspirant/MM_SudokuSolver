@@ -115,16 +115,16 @@ namespace mm {
 		static void testSudokuPuzzlesOfDifferentDimensions(const vector<unsigned int>& dimensions, const int numPuzzlesToGenerate, const int numSolutions, bool solveLibraryPuzzlesAgain);
 
 		static void debugSpecialPuzzleOrAlgorithm_1();
-		static void debugSpecialPuzzleOrAlgorithm_2();
-		static void debugSpecialPuzzleOrAlgorithm_3();
-		static void debugSpecialPuzzleOrAlgorithm_4();
-		static void debugSpecialPuzzleOrAlgorithm_5();
-		static void debugSpecialPuzzleOrAlgorithm_6();
-		static void debugSpecialPuzzleOrAlgorithm_7();
-		static void debugSpecialPuzzleOrAlgorithm_8();
-		static void debugSpecialPuzzleOrAlgorithm_9();
-		static void debugSpecialPuzzleOrAlgorithm_10();
-		static void debugSpecialPuzzleOrAlgorithm_11();
+		static void debugSpecialPuzzleOrAlgorithm_4x4_1();
+		static void debugSpecialPuzzleOrAlgorithm_4x4_2();
+		static void debugSpecialPuzzleOrAlgorithm_16x16();
+		static void debugSpecialPuzzleOrAlgorithm_3x3();
+		static void debugSpecialPuzzleOrAlgorithm_36x36();
+		static void debugSpecialPuzzleOrAlgorithm_49x49_1();
+		static void debugSpecialPuzzleOrAlgorithm_49x49_2();
+		static void debugSpecialPuzzleOrAlgorithm_100x100_1();
+		static void debugSpecialPuzzleOrAlgorithm_100x100_2();
+		static void debugSpecialPuzzleOrAlgorithm_225x225();
 
 		static bool m_printInput;
 		static bool m_printOutput;
