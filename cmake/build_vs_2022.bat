@@ -1,15 +1,19 @@
 @ECHO OFF
 SETLOCAL
 
-if not exist "build_vs_2022" mkdir "build_vs_2022"
+set BUILD_DIR="%CD%\build_vs_2022"
+echo "BUILD_DIR: %BUILD_DIR%"
+
+if not exist "%BUILD_DIR%" mkdir "%BUILD_DIR%"
 
 set CLEANBUILD=%1
 
 IF /I "%CLEANBUILD%"=="clean" (
-	echo.removing old build contents...
-	del /S /Q "build_vs_2022\*.*"
+	echo "Cleaning build directory %BUILD_DIR%. Press any key to continue..."
+	pause
+	del /S /Q "%BUILD_DIR%\*.*"
 )
 
 cmake -H. -Bbuild_vs_2022 -G "Visual Studio 17 2022" -A x64
 
-cmake --build build_vs_2022 --config RelWithDebInfo
+cmake --build %BUILD_DIR% --config RelWithDebInfo
