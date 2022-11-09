@@ -109,7 +109,7 @@ If instead we chose G2, which only has 2 possibilities (89), we'd expect to be w
 the fewest possibilities and the best chance of guessing right. For value ordering we won't do anything special; we'll consider the digits in numeric order.
 
 
-## **3. Using ***"Algorithm X"*** invented by Donald Knuth (implemented using "Dancing Links" technique):**
+## **3. Using ***"Algorithm X"*** developed by Donald Knuth (implemented using "Dancing Links" data structure):**
 
 (To be updated...)
 
